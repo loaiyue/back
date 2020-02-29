@@ -25,8 +25,8 @@ class App extends React.Component {
                     <div className="site-layout-background" style={{padding: 24, minHeight: client_height-64}}>
                         <BrowserRouter>
                             <div>
-                                <Route path="/" render={()=><div>home</div>}></Route>
-                                <Route path="/detail" render={()=><div>detail</div>}></Route>
+                                <Route path="/" exact render={()=><div>home</div>}></Route>
+                                <Route path="/detail" exact render={()=><div>detail</div>}></Route>
                             </div>
                         </BrowserRouter>
                     </div>
